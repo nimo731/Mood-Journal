@@ -1,0 +1,84 @@
+{
+  "moods": [
+    {
+      "id": "1",
+      "emoji": "😊",
+      "name": "Happy",
+      "quotes": [
+        "Joy is the simplest form of gratitude.",
+        "Happiness is a choice, not a result."
+      ]
+    },
+    {
+      "id": "2",
+      "emoji": "😢",
+      "name": "Sad",
+      "quotes": [
+        "It's okay to not be okay.",
+        "Tears water our growth."
+      ]
+    },
+    {
+      "id": "3",
+      "emoji": "🤔",
+      "name": "Thoughtful",
+      "quotes": [
+        "The unexamined life is not worth living.",
+        "I think, therefore I am."
+      ]
+    },
+    {
+      "id": "4",
+      "emoji": "🤯",
+      "name": "Overwhelmed",
+      "quotes": [
+        "Take a deep breath.",
+        "One step at a time."
+      ]
+    },
+    {
+      "id": "5",
+      "emoji": "🎉",
+      "name": "Celebratory",
+      "quotes": [
+        "Celebrate good times, come on!",
+        "Celebrate the small things."
+      ]
+    },
+    {
+      "id": "6",
+      "emoji": "😡",
+      "name": "Angry",
+      "quotes": [
+        "Don't get mad, get even.",
+        "Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured."
+      ]
+    },
+    {
+      "id": "7",
+      "emoji": "🤪",
+      "name": "Silly",
+      "quotes": [
+        "Laughter is the best medicine.",
+        "Life is better when you're laughing."
+      ]
+    },
+    {
+      "id": "8",
+      "emoji": "💔",
+      "name": "Heartbroken",
+      "quotes": [
+        "The heart was made to be broken.",
+        "The saddest thing about love is that not only that it cannot last forever, but that heartbreak is soon forgotten."
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "cfe6",
+      "mood": "🤯 Overwhelmed",
+      "entry": "xxx",
+      "date": "2025-03-28"
+    }
+  ]
+}

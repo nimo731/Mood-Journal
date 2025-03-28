@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vibe Check</h1>
+        <button id="theme-toggle">🌙 Toggle Theme</button>
+    </header>
+
+    <div class="md-container">
+        <div class="md-card" onclick="selectMood(this)" data-mood="😊 Happy">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back happy">😊 Happy</div>
+            </div>
+        </div>
+    
+        <div class="md-card" onclick="selectMood(this)" data-mood="😢 Sad">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back sad">😢 Sad</div>
+            </div>
+        </div>
+    
+        <div class="md-card" onclick="selectMood(this)" data-mood="🤔 Thoughtful">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back thoughtful">🤔 Thoughtful</div>
+            </div>
+        </div>
+    
+        <div class="md-card" onclick="selectMood(this)" data-mood="🤯 Overwhelmed">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back overwhelmed">🤯 Overwhelmed</div>
+            </div>
+        </div>
+    
+        <div class="md-card" onclick="selectMood(this)" data-mood="🎉 Celebratory">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back celebratory">🎉 Celebratory</div>
+            </div>
+        </div>
+    
+        <div class="md-card" onclick="selectMood(this)" data-mood="😡 Angry">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back angry">😡 Angry</div>
+            </div>
+        </div>
+
+        <div class="md-card" onclick="selectMood(this)" data-mood="🤪 Silly">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back silly">🤪 Silly</div>
+            </div>
+        </div>
+
+        <div class="md-card" onclick="selectMood(this)" data-mood="💔 Heartbroken">
+            <div class="card-inner">
+                <div class="card-front">❓</div>
+                <div class="card-back heartbroken">💔 Heartbroken</div>
+            </div>
+        </div>
+    </div>
+    
+    <form id="journal-form">
+        <p>Selected Mood: <span id="selected-mood">None</span></p>
+        
+        <textarea id="entry" placeholder="Write about your mood..."></textarea>
+    
+        <div class="button-container">
+            <button type="button" onclick="clearMood()">Clear Mood</button>
+            <button type="button" onclick="reviewMood()">Review Mood</button>
+            <button type="button" onclick="saveMood()">Save Mood</button>
+        </div>
+    </form>
+    
+    <div class="filter-container">
+        <label for="date-filter">Filter by Date:</label>
+        <input type="date" id="date-filter" onchange="filterMoods()">
+        
+        <label for="mood-filter">Filter by Mood:</label>
+        <select id="filter" onchange="filterMoods()">
+            <option value="all">All</option>
+            <option value="😊 Happy">😊 Happy</option>
+            <option value="😢 Sad">😢 Sad</option>
+            <option value="😡 Angry">😡 Angry</option>
+            <option value="🤔 Thoughtful">🤔 Thoughtful</option>
+            <option value="🤯 Overwhelmed">🤯 Overwhelmed</option>
+            <option value="🎉 Celebratory">🎉 Celebratory</option>
+            <option value="🤪 Silly">🤪 Silly</option>
+            <option value="💔 Heartbroken">💔 Heartbroken</option>
+        </select>
+    </div>
+
+    <section id="entries">
+        <h2>Mood History</h2>
+        <ul id="mood-history"></ul>
+    </section>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
